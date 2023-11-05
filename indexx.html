@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Card Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Small colored div */
+        .color-div {
+            background-color: #3498db; /* Replace with your desired color */
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        /* Bank card form */
+        .card-form {
+            margin-top: 140px;
+            padding: 20px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color-div"></div>
+    <div class="card-form">
+        <form>
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" class="form-input" placeholder="Enter your card number">
+
+            <label for="expDate">Expiration Date</label>
+            <input type="text" id="expDate" class="form-input" placeholder="MM / YY">
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" class="form-input" placeholder="Enter CVV">
+        </form>
+    </div>
+
+    <script>
+        const cardNumberInput = document.getElementById('cardNumber');
+        const expDateInput = document.getElementById('expDate');
+        const cvvInput = document.getElementById('cvv');
+        const colorDiv = document.querySelector('.color-div');
+
+        cardNumberInput.addEventListener('input', () => {
+            colorDiv.textContent = cardNumberInput.value;
+        });
+
+        expDateInput.addEventListener('input', () => {
+            colorDiv.textContent = expDateInput.value;
+        });
+
+        cvvInput.addEventListener('input', () => {
+            colorDiv.textContent = cvvInput.value;
+        });
+    </script>
+</body>
+</html>

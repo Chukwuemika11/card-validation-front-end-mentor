@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=League+Spartan:wght@400;500;700&family=Overpass:wght@400;700&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div id="main-container">
+    <!-- <div class="image-container"> -->
+  <div class="first-container">
+      
+
+    <div class="images">
+      <div class="image1">
+        <svg class="svg" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+        <!-- <div class="cardDisplay"></div> -->
+        <!-- <div class="details"> -->
+        <div class="shift">
+          <p class="cardNumber"></p>
+          <div class="flex">
+          <p class="cardName"></p>
+          <div class="monthAndYear">
+            <p class="exMonth"></p>
+            <p class="exYear"></p>
+          </div>
+        </div>
+        </div>
+          
+
+        <!-- </div> -->
+        
+      </div>
+      
+      <div class="image2">
+            <p class="cvc"></p>
+      </div>
+    </div>
+  </div>
+  
+  
+<!-- </div> -->
+
+  <div class="second-container">
+    <form id="paymentForm" action="" method="post">
+      <div id="cardDetailsContainer">
+      <label for="cardholderName">Cardholder Name</label>
+      <input type="text" id="cardholderName" placeholder="Jane Appleseed
+      " name="cardholderName" required>
+      <div id="cardholderNameError" class="error"></div>
+      <!-- <div id="wrong" class="erro"></div> -->
+
+      <label for="cardNumber">Card Number</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000" required>
+      <div id="cardNumberError" class="error"></div>
+
+        
+      <div class="number-details">
+        <div class="block1">
+      <label for="month">Exp.Date</label>
+      <input type="text" id="expMonth" name="expMonth" placeholder="MM" required>
+      <div id="expMonthError" class="error"></div>
+       </div>
+       
+       <div class="block2">
+     <label for="year">(MM/YY)</label>
+     <input type="text" id="expYear" name="expYear" placeholder="YY" required>
+     <div id="expYearError" class="error"></div>
+
+    </div>
+ 
+    <div class="block3">
+     <label for="cvv">CVC</label>
+      <input type="text" placeholder=" e.g. 123" id="cvv" name="cvc" required>
+      <div id="cvvError" class="error"></div>
+
+      </div>
+    </div>
+
+  </div>
+      <button type="submit">Confirm</button>
+  </form>
+  </div>
+  </div>
+</header>
+
+  <!-- 0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm -->
+
+  <!-- Completed state start -->
+
+  <!-- Thank you!
+  We've added your card details
+  Continue -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./script.js"></script>
+</body>
+</html>

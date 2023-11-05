@@ -1,0 +1,371 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+header{
+    padding: 30px 80px;
+}
+
+#main-container{
+    background-color: #fff;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    /* flex-direction: row;
+    margin: 60px auto; */
+    box-shadow: 5px 5px 10px #888888;
+        /* justify-content: space-between; */
+}
+
+
+.first-container{
+    width: 35%;
+    background-repeat: no-repeat;
+    background-image: url("./images/bg-main-desktop.png");
+    height: 600px;
+    /* background-image: url("./images/bg-card-front.png");
+    background-image: url("./images/bg-card-back.png"); */
+}
+
+
+.images{
+    margin-top: 30px;
+    /* margin-left: 70px; */
+}
+
+.image1{
+    background-image: url("./images/bg-card-front.png");
+    background-repeat: no-repeat;
+    width: 447px;
+    height:245px; 
+    margin-bottom: 20px;   
+    margin-left: 120px;
+    /* position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1; */
+}
+
+.cardName{
+    padding-top: 50px;
+    padding-left:20px;
+    color: hsla(0, 0%, 100%, 0.678);
+}
+
+/* White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%) */
+.cardNumber{
+    /* padding-top: 100px; */
+    padding-left:20px;
+    padding-top: 120px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: -20px;
+} 
+
+.flex{
+    display: flex;
+    align-items: baseline;
+}
+
+.shift{
+    margin-top: -35px;
+    padding-left: 5px;
+}
+
+
+.monthAndYear{
+    display: flex;
+    padding-top: 50px;
+    gap: 10px;
+    padding-left: 170px;
+    color: hsla(0, 0%, 100%, 0.678);
+}
+
+.svg{
+    margin: 10px 20px;
+}
+
+.cvc{
+    color: hsla(0, 0%, 100%, 0.779);
+    padding-top: 112px;
+    padding-left: 365px;
+}
+
+.image2{
+    background-image: url("./images/bg-card-back.png");
+    background-repeat: no-repeat;
+    width: 447px;
+    height:245px; 
+    margin-left: 200px;
+    /* border-radius: 10px; */
+}
+
+.second-container{
+    /* width: 100%; */
+    /* padding: 50% auto ; */
+}
+
+
+form {
+    width: 300px;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 110%;
+}
+
+form button{
+    width: 100%;
+    height: 30px;
+    background-color:hsl(278, 68%, 11%) ;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%) */
+.number-details{
+    display: flex;
+}
+
+.number-details, input{
+    justify-content: space-between;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+}
+
+label{
+    margin-bottom: 0px;
+}
+
+
+.block1{
+    display: block;
+    /* width: 20%; */
+}
+
+.block1 label{
+    width: 20%;
+}
+
+.block1 input{
+    width:80%;
+}
+
+.block2{
+    display: block;
+    /* margin-left: -30px; */
+    /* width: 20%; */
+}
+
+.block2 label{
+    width: 20%;
+}
+
+.block2 input{
+    width: 80%;
+}
+
+.block3{
+    display: block;
+    width: 130%;
+}
+
+.block3 label{
+    width: 20%;
+}
+
+.block3 input{
+    width: 100%;
+}
+
+
+.error {
+    color: red;
+    gap: 20px;
+/* justify-content: space-between; */
+}
+
+@media (max-width: 477px){
+    header{
+    max-width: 375px; /* Set a maximum width for screens wider than 375px */
+    padding: 0px 0px;
+    }
+
+
+    #main-container{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 5px;
+        box-shadow: 5px 5px 10px #fff;
+        margin-left:  50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    form {
+        width:100%;
+        margin-top: 30px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+    .first-container{
+        width: fit-content;
+        background-repeat: no-repeat;
+        /* height: 900px; */
+        background-image: url("./images/bg-main-mobile.png");
+        /* background-image: url("./images/bg-main-mobile.png"); */
+        /* background-image: url("./images/bg-card-front.png");
+        background-image: url("./images/bg-card-back.png"); */
+    }
+    
+    
+    .images{
+       /* margin-top: 0px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row; */
+    margin-left: -31px;
+    margin-top: -10px;
+}
+    
+    
+    .image1{
+        background-image: url("./images/bg-card-front.png");
+        background-repeat: no-repeat;
+        /* width: 120px;
+        height:245px;  */
+        margin-bottom: 20px;   
+        /* order: 0; */
+        order: 2;
+        background-size: auto 150px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -158px;
+        margin-left: -20px;   
+    }
+    
+    .image2{
+        background-image: url("./images/bg-card-back.png");
+        background-repeat: no-repeat;
+        margin-left: 0px;
+        order: 1;
+        background-image: url("./images/bg-card-back.png");
+        background-size: auto 150px;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* width: 120px;
+        height:245px;  */
+        margin-left: 10px;   
+        /* order: 1; */
+       
+        /* border-radius: 10px; */
+    }
+
+    .svg {
+        margin-top: 70px;
+        margin-left: 100px;
+    }
+
+
+
+    .cardName{
+        padding-top: 0px;
+        padding-left:100px;
+        color: #000;
+        /* width: auto 150px; */
+        /* color: hsla(0, 0%, 100%, 0.678); */
+    }
+    
+    /* White: hsl(0, 0%, 100%)
+    - Light grayish violet: hsl(270, 3%, 87%)
+    - Dark grayish violet: hsl(279, 6%, 55%)
+    - Very dark violet: hsl(278, 68%, 11%) */
+    .cardNumber{
+        /* padding-top: 100px; */
+        margin-left:78px;
+        padding-top: 35px;
+        color: #000;
+        /* color: hsl(0, 0%, 100%); */
+        margin-bottom: -20px;
+    } 
+    
+    .flex{
+        display: flex;
+        align-items: baseline;
+    }
+    
+    .cvc{
+        color: black;
+        /* color: hsla(0, 0%, 100%, 0.779); */
+        padding-top: 112px;
+        padding-left: 300px;
+    }
+
+    .shift{
+        margin-top: -35px;
+        padding-left: 5px;
+    }
+    
+    /* .exMonth{
+        width: 20px;
+    }
+
+    .exYear{
+        width: 20px;
+    } */
+    
+    .monthAndYear{
+        display: flex;
+        padding-top: 35px;
+        gap: 10px;
+        padding-left: 30px;
+        color: #000;
+        /* width: 447px; */
+        /* color: hsla(0, 0%, 100%, 0.678); */
+    }
+    /* form button{
+        width: 100%;
+        height: 35px;
+        background-color:hsl(278, 68%, 11%) ;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    } */
+}
+
+
+
